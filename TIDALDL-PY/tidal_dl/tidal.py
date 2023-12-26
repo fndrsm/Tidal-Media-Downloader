@@ -352,7 +352,7 @@ class TidalAPI(object):
         return tracks
 
     def getStreamUrl(self, id, quality: AudioQuality):
-        squality = "HI_RES"
+        squality = "HI_RES_LOSSLESS"
         if quality == AudioQuality.Normal:
             squality = "LOW"
         elif quality == AudioQuality.High:
